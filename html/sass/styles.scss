@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,500i|Roboto:700,700i&display=swap');
+
+// typography
+$font-Roboto: 'Roboto', sans-serif;
+$font-Poppins: 'Poppins', sans-serif;
+
+// color
+$color-blue: #30a7df;
+$color-black: #000;
+
+/* global */
+body { font: normal 14px $font-Roboto; margin: 0; }
+
+.wrap { margin: 0 auto; max-width: 1170px; }
+
+a {
+	
+	&, &:hover { text-decoration: none; }
+}
+
+img { max-width: 100%; height: auto; }
+
+/* end - global */
+
+section { text-align: center; }
+
+h1 { font-size: 90px; font-weight: bold; color: $color-blue; letter-spacing: 7px; }
+
+.service-sec { text-align: center; margin-top: 198px; 
+		
+	h2 { font-size: 36px; color: #34a9e0; }
+	
+	ul { text-align: center; padding: 0; margin-top: 35px; 
+	
+		li { display: inline-block; width: 110px; margin: 0 15px; 
+	
+			p { font-size: 18px; color: #34a9e0; font-weight: bold; margin-top: 20px; }
+		}
+	}
+}
+
+footer { text-align: center; padding-bottom: 20px; margin-top: 200px;
+
+	p { font-size: 36px; margin: 0 0 20px;
+
+		strong { font-size: 48px; color: $color-blue; text-transform: uppercase; letter-spacing: 10px; }
+
+		a { color: $color-black; }
+
+		&.call { font-family: $font-Poppins; }
+
+		&.email { letter-spacing: 5px; }
+	}
+}
+
+@media screen and (max-width: 991px){
+
+	.wrap { width: calc(100% - 30px); }
+}
+
+@media screen and (max-width: 567px){
+
+	h1 { font-size: 40px; letter-spacing: normal; margin-bottom: 50px; }
+	
+	.service-sec { margin-top: 50px;
+		
+		ul {
+
+			li { display: block; width: auto; }
+		}
+	}
+
+	footer { margin-top: 50px;
+
+		p { font-size: 30px;
+
+			&.email { letter-spacing: 0; 
+
+				a { font-size: 22px; }
+			}
+
+			strong { font-size: 36px; display: block; }
+		}
+	}
+}

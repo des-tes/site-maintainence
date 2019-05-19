@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,500i|Roboto:700,700i&display=swap");
+
+/* global */
+body {
+  font: normal 14px "Roboto", sans-serif;
+  margin: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* end - global */
+section {
+  text-align: center;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: bold;
+  color: #30a7df;
+  letter-spacing: 7px;
+}
+
+.service-sec {
+  text-align: center;
+  margin-top: 198px;
+}
+
+.service-sec h2 {
+  font-size: 36px;
+  color: #34a9e0;
+}
+
+.service-sec ul {
+  text-align: center;
+  padding: 0;
+  margin-top: 35px;
+}
+
+.service-sec ul li {
+  display: inline-block;
+  width: 110px;
+  margin: 0 15px;
+}
+
+.service-sec ul li p {
+  font-size: 18px;
+  color: #34a9e0;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 200px;
+}
+
+footer p {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+footer p strong {
+  font-size: 48px;
+  color: #30a7df;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+footer p a {
+  color: #000;
+}
+
+footer p.call {
+  font-family: "Poppins", sans-serif;
+}
+
+footer p.email {
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width:991px) {
+  .wrap {
+    width: calc(100% - 30px);
+  }
+
+}
+
+@media screen and (max-width:567px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: normal;
+    margin-bottom: 50px;
+  }
+
+  .service-sec {
+    margin-top: 50px;
+  }
+
+  .service-sec ul li {
+    display: block;
+    width: auto;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+
+  footer p {
+    font-size: 30px;
+  }
+
+  footer p.email {
+    letter-spacing: 0;
+  }
+
+  footer p.email a {
+    font-size: 22px;
+  }
+
+  footer p strong {
+    font-size: 36px;
+    display: block;
+  }
+
+}
